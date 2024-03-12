@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles.css">
+    <title>Doctor Call - EaseMinds</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="static/logo.png" alt="EaseMinds Logo">
+        </div>
+        <h1>Doctor Call</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="chat.html">Chat</a></li>
+            <li><a href="doctor-call.html">Doctor Call</a></li>
+        </ul>
+    </nav>
+    <!-- <main>
+        <section class="call-section">
+            <h2>Video Call with Your Doctor</h2>
+            <div class="video-container">
+               Video call iframe or component goes here -->
+                <!-- Replace the URL with your video call service (e.g., Zoom, WebEx) -->
+                <!-- <iframe src="https://your-video-call-service.com/your-room-id" frameborder="0" allowfullscreen></iframe>
+            </div> --> 
+        <!-- </section>
+        <section class="additional-info">
+            <h3>Appointment Details</h3>
+            <p>Date: [Appointment Date]</p>
+            <p>Time: [Appointment Time]</p>
+            <p>Doctor: [Doctor's Name]</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 EaseMinds By Team Binary Nomads. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
+... (previous HTML code) ... -->
+
+<main>
+    <section class="call-section">
+        <h2>Video/Audio Call with Your Doctor</h2>
+        <div class="video-container">
+            <img src="static/videodoc.jpg" alt="Video Call Image">
+            <!-- Video call iframe or component goes here -->
+            <!-- Replace the URL with your video call service (e.g., Zoom, WebEx) -->
+            <iframe src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+    <section class="additional-info">
+        <h3>Appointment Details</h3>
+        <form id="appointmentForm">
+            <label for="appointmentDate">Date:</label>
+            <input type="date" id="appointmentDate" name="appointmentDate" required>
+
+            <label for="appointmentTime">Time:</label>
+            <input type="time" id="appointmentTime" name="appointmentTime" required>
+
+            <label for="doctorName">Doctor's Name:</label>
+            <input type="text" id="doctorName" name="doctorName" required>
+
+            <button type="submit">Schedule Appointment</button>
+        </form>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 EaseMinds By Team Binary Nomads. All rights reserved.</p>
+</footer>
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EaseMinds - Chat</title>
+    <link rel="stylesheet" href="static/style2.css">
+    <style>
+        /* ... (your existing styles) ... */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="static/logo.png" alt="EaseMinds Logo">
+            <h1>Welcome to EaseMinds</h1>
+            <button class="logout-btn" onclick="logout()">Logout</button>
+        </header>
+
+        <main>
+            <div id="chat-container">
+                <div id="chat-box">
+                </div>
+                <div id="user-input">
+                    <input type="text" id="message-input" placeholder="Type your message..." oninput="checkForHelp()">
+                    <button id="send-btn" onclick="sendMessage()">Send</button>
+
+                    <!-- Connect button (initially hidden) -->
+                    <button id="connect-btn" style="display:none;" onclick="redirectToSocCall()">Connect</button>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 EaseMinds. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="static/script.js"></script>
+    <script>
+        function checkForHelp() {
+            // Get the user input value
+            var userInput = document.getElementById('message-input').value.toLowerCase();
+
+            // Check if the user input contains the word 'help'
+            if (userInput.includes('help')) {
+                // If 'help' is found, show the 'Connect' button
+                document.getElementById('connect-btn').style.display = 'inline-block';
+            } else {
+                // If 'help' is not found, hide the 'Connect' button
+                document.getElementById('connect-btn').style.display = 'none';
+            }
+        }
+
+        function redirectToSocCall() {
+            // Redirect to soccall.html
+            window.location.href = 'doctor_call.html';
+        }
+
+        // Your existing JavaScript functions (logout, sendMessage, etc.) go here
+    </script>
+</body>
+
+</html>
